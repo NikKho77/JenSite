@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--<h1 class="LogoMain">FlatWhite</h1>-->
+<div class="card aa" style="width: 28rem;">
+  <div class="card-body">
+    <h5 class="card-title">FlatWhite</h5>
+
+       {% for gt in object_list %}
+        <p class="card-text">{{gt.textMainPage}}</p>
+      {% endfor %}
+
+  </div>
+</div>
+
+{% endblock %}
+
+
